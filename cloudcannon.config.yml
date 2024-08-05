@@ -6,6 +6,9 @@ data_config:
 
 source: 
 
+_inputs:
+  src:
+    type: image
 
 paths:
   static: ''
