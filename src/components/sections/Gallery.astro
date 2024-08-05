@@ -664,7 +664,7 @@ interface GalleryProps {
 
     constructor() {
       const $filters = document.querySelectorAll(this.filtersSelector);
-      this.$activeFilter = $filters[0];
+      this.$activeFilter = $filters[0] as HTMLElement;
       this.$images = document.querySelectorAll(this.imagesSelector);
 
       this.$activeFilter.classList.add(this.activeClass);
