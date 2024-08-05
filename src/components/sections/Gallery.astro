@@ -1,10 +1,11 @@
 ---
-interface GalleryProps{
-    images: string[];
-    activeFilter:string;
-    onClick:(index:number)=>void;
+interface GalleryProps {
+  images: string[];
+  activeFilter: string;
+  onClick: (index: number) => void;
 }
 ---
+
 <!-- ============================================ --><!--                   Gallery                    --><!-- ============================================ --><!--
     To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
 -->
@@ -652,6 +653,10 @@ interface GalleryProps{
 </div>
 <script>
   class GalleryFilter {
+    private $activeFilter: HTMLElement | null = null;
+    private $images: NodeListOf<HTMLElement> = document.querySelectorAll("");
+
+
     filtersSelector = ".cs-button";
     imagesSelector = ".cs-gallery";
     activeClass = "cs-active";
