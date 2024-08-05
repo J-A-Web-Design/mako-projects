@@ -1,4 +1,6 @@
-collections_config: {}
+collections_config: 
+    gallery: 
+        path: src/pages
 
 collection_groups:
 
