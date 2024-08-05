@@ -26,22 +26,22 @@
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
           <li class="cs-li">
-            <a href="" class="cs-li-link cs-active"> Home</a>
+            <a href="#" class="cs-li-link cs-active"> Home</a>
           </li>
           <li class="cs-li">
-            <a href="" class="cs-li-link"> About</a>
+            <a href="#about" class="cs-li-link"> About</a>
           </li>
           <li class="cs-li">
             <a href="" class="cs-li-link"> Services</a>
           </li>
           <li class="cs-li">
-            <a href="" class="cs-li-link"> Team</a>
+            <a href="" class="cs-li-link">Gallery</a>
           </li>
           <li class="cs-li">
-            <a href="" class="cs-li-link"> Our Work</a>
+            <a href="" class="cs-li-link">Testimonials</a>
           </li>
           <li class="cs-li">
-            <a href="" class="cs-li-link"> FAQ</a>
+            <a href="" class="cs-li-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -217,8 +217,8 @@ html {
         width: 3.5rem;
         height: 3.5rem;
         margin: 0 0 0 auto;
-        background-color: #484848;
-        border: none;
+        background-color: var(--primary);
+        border-radius: 4px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -542,6 +542,7 @@ html {
         left: 0;
         z-index: -1;
         transition: width 0.3s;
+        border-radius: 4px;
     }
     #cs-navigation .cs-button-solid:hover {
         color: #1a1a1a;
@@ -551,6 +552,7 @@ html {
     }
     #cs-navigation .cs-nav-button {
         line-height: 2.875rem;
+        border-radius: 4px;
     }
 }
 
