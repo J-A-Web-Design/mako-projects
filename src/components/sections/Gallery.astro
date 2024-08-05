@@ -1,11 +1,3 @@
----
-interface GalleryProps {
-  images: string[];
-  activeFilter: string;
-  onClick: (index: number) => void;
-}
----
-
 <!-- ============================================ --><!--                   Gallery                    --><!-- ============================================ --><!--
     To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
 -->
@@ -15,16 +7,16 @@ interface GalleryProps {
       <div class="cs-content">
         <div class="cs-flex">
           <span class="cs-topper">Gallery</span>
-          <h2 class="cs-title">Our Photo Gallery</h2>
+          <h2 class="cs-title">Our Construction and Renovation Projects</h2>
         </div>
-        <div class="cs-button-group">
+        <!-- <div class="cs-button-group">
           <button class="cs-button" data-filter="one"> All</button>
           <button class="cs-button" data-filter="two"> Global Warming</button>
           <button class="cs-button" data-filter="three"> Climate Strike</button>
           <button class="cs-button" data-filter="four">
             Sustainable Energy
           </button>
-        </div>
+        </div> -->
       </div>
       <div class="cs-gallery-wrapper">
         <!--Gallery 1-->
@@ -651,53 +643,6 @@ interface GalleryProps {
     </div>
   </section>
 </div>
-<script>
-  class GalleryFilter {
-    private $activeFilter: HTMLElement | null = null;
-    private $images: NodeListOf<HTMLElement> = document.querySelectorAll("");
-
-
-    filtersSelector = ".cs-button";
-    imagesSelector = ".cs-gallery";
-    activeClass = "cs-active";
-    hiddenClass = "cs-hidden";
-
-    constructor() {
-      const $filters = document.querySelectorAll(this.filtersSelector);
-      this.$activeFilter = $filters[0] as HTMLElement;
-      this.$images = document.querySelectorAll(this.imagesSelector);
-
-      this.$activeFilter.classList.add(this.activeClass);
-
-      for (const $filter of $filters) {
-        $filter.addEventListener("click", () => this.onClick($filter));
-      }
-    }
-
-    onClick($filter) {
-      this.filter($filter.dataset.filter);
-
-      const { activeClass } = this;
-
-      this.$activeFilter.classList.remove(activeClass);
-      $filter.classList.add(activeClass);
-
-      this.$activeFilter = $filter;
-    }
-
-    filter(filter) {
-      const showAll = filter == "all";
-      const { hiddenClass } = this;
-
-      for (const $image of this.$images) {
-        const show = showAll || $image.dataset.category == filter;
-        $image.classList.toggle(hiddenClass, !show);
-      }
-    }
-  }
-
-  new GalleryFilter();
-</script>
 <style>
   /*-- -------------------------- -->
 <---          Gallery           -->
