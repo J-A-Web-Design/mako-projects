@@ -1,6 +1,4 @@
 collections_config: 
-    gallery: 
-        path: src/pages
 
 collection_groups:
 
@@ -10,9 +8,6 @@ source:
 
 
 paths:
-  data: ''
-  collections: ''
-  layouts: null
   static: ''
   uploads: uploads
 
