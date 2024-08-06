@@ -10,7 +10,8 @@
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --bodyFontSize: 1rem;
+    --bodyFontSizeSmall: 1rem;
+    --bodyFontSize: 1.5rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     --headings: 'Montserrat Variable', sans-serif;
@@ -54,7 +55,7 @@
   }
   
   .cs-text {
-    font-size: var(--bodyFontSize);
+    font-size: var(--bodyFontSizeSmall);
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;
@@ -78,4 +79,15 @@
 
 h2, h3{
 font-family: var(--headings);
+}
+
+@media(min-width: 768px){
+
+  .cs-text {
+    font-size: var(--bodyFontSize);
+  }
+}
+
+footer .cs-header{
+  color: var(--bodyTextColorWhite) !important;
 }
