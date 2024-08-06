@@ -1,5 +1,8 @@
 ---
 import  AboutComponent  from "../About/About.astro";
+
+
+const props = { /* ... */ };
 ---
 
 <!-- ============================================ --><!--                 Side By Side                 --><!-- ============================================ -->
@@ -7,7 +10,7 @@ import  AboutComponent  from "../About/About.astro";
   <div class="cs-container">
     <!-- Left Section -->
     <div class="cs-image-group">
-      <AboutComponent bookshop:live text="Hello World" />
+      <AboutComponent bookshop:live {...props}  />
       <picture class="cs-picture cs-picture1">
         <source
           media="(max-width: 600px)"
