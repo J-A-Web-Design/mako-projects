@@ -13,7 +13,7 @@
       <!--Gallery-->
       <div class="cs-gallery">
         <!--Picture 1-->
-        <picture class="cs-image">
+        <picture class="cs-image" id="image01">
           <source
             media="(max-width: 600px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
@@ -22,14 +22,16 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
           />
+         <div class="modal" id="myModal">
           <img
-            loading="lazy"
-            decoding="async"
-            src="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
-            alt="gallery"
-            width="305"
-            height="400"
-          />
+          loading="lazy"
+          decoding="async"
+          src="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
+          alt="gallery"
+          width="305"
+          height="400"
+        />
+         </div>
         </picture>
         <!--Picture 2-->
         <picture class="cs-image">
@@ -230,4 +232,7 @@
       object-fit: cover;
     }
   }
+
+
+
 </style>
