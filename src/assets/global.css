@@ -3,6 +3,7 @@
     --primaryLight: #7FA1C3;
     --secondary: #76a3cf;
     --secondaryLight: #87b7ff;
+    --textMako:#3abebd;
     --headerColor: #1a1a1a;
     --bodyTextColor: #ffffff;
     --bodyTextColorWhite: #fafbfc;
@@ -92,4 +93,7 @@ font-family: var(--headings);
 
 footer .cs-header{
   color: var(--bodyTextColorWhite) !important;
+}
+.text-mako{
+  color: var(--textMako);
 }
