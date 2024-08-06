@@ -1,5 +1,5 @@
 ---
-import  About  from "../About/About.astro";
+import  AboutComponent  from "../About/About.astro";
 ---
 
 <!-- ============================================ --><!--                 Side By Side                 --><!-- ============================================ -->
@@ -7,7 +7,7 @@ import  About  from "../About/About.astro";
   <div class="cs-container">
     <!-- Left Section -->
     <div class="cs-image-group">
-      <About bookshop:live text="Hello World" />
+      <AboutComponent bookshop:live text="Hello World" />
       <picture class="cs-picture cs-picture1">
         <source
           media="(max-width: 600px)"
