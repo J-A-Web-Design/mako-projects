@@ -13,6 +13,7 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --headings: 'Montserrat Variable', sans-serif;
   }
   
   body {
@@ -73,4 +74,8 @@
   
 .bg-darker{
   background-color: var(--secondary);
+}
+
+h2, h3{
+font-family: var(--headings);
 }
