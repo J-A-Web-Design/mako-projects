@@ -2,7 +2,7 @@ collections_config:
       site_data: 
         path: src/data
       pages:
-        path: src/content/pages
+        path: src/pages
         url: '/[full_slug]/'
         output: true
         icon: laptop_mac
