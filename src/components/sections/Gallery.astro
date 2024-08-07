@@ -1,6 +1,7 @@
-<!-- ============================================ --><!--                   Gallery                    --><!-- ============================================ --><!--
-    To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
--->
+---
+import { Img } from "astro-imagetools/components";
+---
+<!-- ============================================ --><!--                   Gallery                    --><!-- ============================================ -->
 <div id="gallery">
   <section id="gallery-1446">
     <div class="cs-container">
@@ -13,7 +14,7 @@
       <!--Gallery-->
       <div class="cs-gallery">
         <!--Picture 1-->
-        <picture class="cs-image" id="image01">
+        <picture class="cs-image">
           <source
             media="(max-width: 600px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
@@ -22,16 +23,14 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
           />
-         <div class="modal" id="myModal">
-          <img
-          loading="lazy"
-          decoding="async"
-          src="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
-          alt="gallery"
-          width="305"
-          height="400"
-        />
-         </div>
+          <Img
+            loading="lazy"
+            decoding="async"
+            src="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp"
+            alt="gallery"
+            width="305"
+            height="400"
+          />
         </picture>
         <!--Picture 2-->
         <picture class="cs-image">
@@ -43,7 +42,7 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-2.webp"
           />
-          <img
+          <Img
             loading="lazy"
             decoding="async"
             src="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-2.webp"
@@ -62,7 +61,7 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-3.webp"
           />
-          <img
+          <Img
             loading="lazy"
             decoding="async"
             src="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-3.webp"
@@ -81,7 +80,7 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-4.webp"
           />
-          <img
+          <Img
             loading="lazy"
             decoding="async"
             src="https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-4.webp"
@@ -100,7 +99,7 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-5.jpg"
           />
-          <img
+          <Img
             loading="lazy"
             decoding="async"
             src="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-5.jpg"
@@ -119,7 +118,7 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-6.jpg"
           />
-          <img
+          <Img
             loading="lazy"
             decoding="async"
             src="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-6.jpg"
@@ -138,7 +137,7 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-7.jpg"
           />
-          <img
+          <Img
             loading="lazy"
             decoding="async"
             src="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-7.jpg"
@@ -157,7 +156,7 @@
             media="(min-width: 601px)"
             srcset="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg"
           />
-          <img
+          <Img
             loading="lazy"
             decoding="async"
             src="https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg"
@@ -222,7 +221,7 @@
       display: block;
       position: relative;
     }
-    #gallery-1446 .cs-image img {
+    #gallery-1446 .cs-image Img {
       position: absolute;
       top: 0;
       left: 0;
@@ -232,7 +231,4 @@
       object-fit: cover;
     }
   }
-
-
-
 </style>

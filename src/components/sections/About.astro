@@ -6,113 +6,115 @@ const props = { /* ... */ };
 ---
 
 <!-- ============================================ --><!--                 Side By Side                 --><!-- ============================================ -->
-<section id="sbs-683">
-  <div class="cs-container">
-    <!-- Left Section -->
-    <div class="cs-image-group">
-      <AboutComponent bookshop:live {...props}  />
-      <picture class="cs-picture cs-picture1">
-        <source
-          media="(max-width: 600px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-1.webp?updatedAt=1722905946761"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-1.webp?updatedAt=1722905946761"
-        />
+<div id="about">
+  <section id="sbs-683">
+    <div class="cs-container">
+      <!-- Left Section -->
+      <div class="cs-image-group">
+        <AboutComponent bookshop:live {...props}  />
+        <picture class="cs-picture cs-picture1">
+          <source
+            media="(max-width: 600px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-1.webp?updatedAt=1722905946761"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-1.webp?updatedAt=1722905946761"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-1.webp?updatedAt=1722905946761"
+            alt="people outside"
+            width="306"
+            height="360"
+            aria-hidden="true"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture2">
+          <source
+            media="(max-width: 600px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+            alt="people outside"
+            width="306"
+            height="360"
+            aria-hidden="true"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture3">
+          <source
+            media="(max-width: 600px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+            alt="person gardening"
+            width="306"
+            height="360"
+            aria-hidden="true"
+          />
+        </picture>
+        <picture class="cs-picture cs-picture4">
+          <source
+            media="(max-width: 600px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
+            alt="urban environment in green"
+            width="306"
+            height="360"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--Zig Zag Graphic-->
         <img
+          class="cs-graphic"
+          aria-hidden="true"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fzigzag.svg"
           loading="lazy"
           decoding="async"
-          src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-1.webp?updatedAt=1722905946761"
-          alt="people outside"
-          width="306"
-          height="360"
-          aria-hidden="true"
+          alt="zigzag"
+          width="983"
+          height="416"
         />
-      </picture>
-      <picture class="cs-picture cs-picture2">
-        <source
-          media="(max-width: 600px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-        />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-          alt="people outside"
-          width="306"
-          height="360"
-          aria-hidden="true"
-        />
-      </picture>
-      <picture class="cs-picture cs-picture3">
-        <source
-          media="(max-width: 600px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-        />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-          alt="person gardening"
-          width="306"
-          height="360"
-          aria-hidden="true"
-        />
-      </picture>
-      <picture class="cs-picture cs-picture4">
-        <source
-          media="(max-width: 600px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-        />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="https://ik.imagekit.io/azupnt3mqx/mako-image-interior-2.webp?updatedAt=1722905946522"
-          alt="urban environment in green"
-          width="306"
-          height="360"
-          aria-hidden="true"
-        />
-      </picture>
-      <!--Zig Zag Graphic-->
-      <img
-        class="cs-graphic"
-        aria-hidden="true"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fzigzag.svg"
-        loading="lazy"
-        decoding="async"
-        alt="zigzag"
-        width="983"
-        height="416"
-      />
+      </div>
+      <div class="cs-content">
+        <span class="cs-topper">Why Choose Us</span>
+        <h2 class="cs-title">About Us</h2>
+        <p class="cs-text">
+          With over 25 years of experience and Red Seal certification, we possess
+          the expertise to complete projects properly and efficiently. Our
+          extensive experience means we understand the intricacies of both
+          residential and commercial projects, ensuring that each one is executed
+          with the highest standards of quality and professionalism.
+        </p>
+        <a class="cs-button-solid shadow-lg" href="">Contact Us</a>
+      </div>
     </div>
-    <div class="cs-content">
-      <span class="cs-topper">Why Choose Us</span>
-      <h2 class="cs-title">About Us</h2>
-      <p class="cs-text">
-        With over 25 years of experience and Red Seal certification, we possess
-        the expertise to complete projects properly and efficiently. Our
-        extensive experience means we understand the intricacies of both
-        residential and commercial projects, ensuring that each one is executed
-        with the highest standards of quality and professionalism.
-      </p>
-      <a class="cs-button-solid shadow-lg" href="">Contact Us</a>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 <style>
   /*-- -------------------------- -->
 <---       Side By Side         -->
