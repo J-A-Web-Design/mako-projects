@@ -1,27 +1,26 @@
-collections_config: 
-      site_data: 
-        path: src/data
+collections_config:
+  site_data:
+    path: src/data
 
 collection_groups:
-    pages:
-      path: src/pages
-      type: astro
+  pages:
+    path: src/pages
+    type: astro
 
 data_config:
-   collections:
+  collections:
     - pages
 
-source: 
+source:
 
 _inputs:
   src:
     type: image
 
 paths:
-  static: ''
+  static: ""
   uploads: uploads
 
 source_editor:
 
 timezone: Etc/UTC
-
