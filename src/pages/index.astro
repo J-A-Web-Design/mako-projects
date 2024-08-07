@@ -6,6 +6,8 @@ import Hero from '../components/sections/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 import Services from '../components/sections/Services.astro';
 import Testimonials from '../components/sections/Testimonials.astro';
+
+const props = { /* ... */ };
 ---
 
 <Layout title="Mako Construction and Renovations">
@@ -13,7 +15,7 @@ import Testimonials from '../components/sections/Testimonials.astro';
 		<Hero />
 		<About />
 		<Services />
-		<GalleryComponent bookshop:live />
+		<GalleryComponent bookshop:live {...props} />
 		<Testimonials />
 		<ContactInfo />
 	</main>
