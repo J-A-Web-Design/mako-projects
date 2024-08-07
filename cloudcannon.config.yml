@@ -1,35 +1,14 @@
-collections_config:
-  site_data:
-    path: src/data
-  pages:
-    path: src/pages
-    url: '/[full_slug]/'
-    output: true
-    icon: laptop_mac
-    _enabled_editors:
-      - visual
-    filter:
-      base: strict
-    add_options:
-      - name: Add New Page
-        schema: default
-        icon: pages
-    schemas:
-      default:
-        name: New Page
-        path: schemas/page.md
-        remove_extra_inputs: false
-    create:
-      path: '[relative_base_path]/{title|slugify}.md'
+collections_config: 
+      site_data: 
+        path: src/data
 
 collection_groups:
 
 data_config:
-  data:
-    path: src/data
-    type: json
 
-source:
+source: 
+
+_inputs:
   src:
     type: image
 
@@ -40,3 +19,4 @@ paths:
 source_editor:
 
 timezone: Etc/UTC
+
