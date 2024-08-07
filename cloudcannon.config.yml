@@ -8,6 +8,7 @@ collection_groups:
     type: astro
 
 data_config:
+<<<<<<< HEAD
   collections:
     - pages
 
@@ -15,6 +16,12 @@ source:
   src: src
 
 inputs:
+=======
+
+source: 
+
+_inputs:
+>>>>>>> parent of d6e4e36 (Update cloudcannon.config.yml)
   src:
     type: image
 
