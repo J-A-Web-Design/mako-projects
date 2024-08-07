@@ -26,12 +26,14 @@ collections_config:
 collection_groups:
 
 data_config:
+  data:
+      path: src/data
+      type: json
 
 source: 
-
-_inputs:
-  src:
-    type: image
+  _inputs:
+    src:
+      type: image
 
 paths:
   static: ''
