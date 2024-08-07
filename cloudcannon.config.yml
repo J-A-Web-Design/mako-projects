@@ -19,7 +19,7 @@ inputs:
     type: image
 
 paths:
-  static: ''
+  static: ""
   uploads: uploads
 
 source_editor:
