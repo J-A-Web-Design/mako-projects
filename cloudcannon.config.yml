@@ -1,0 +1,52 @@
+source: src
+paths:
+  uploads:
+  uploads_filename:
+  uploads_use_relative_path:
+  static:
+  dam_uploads:
+  dam_uploads_filename:
+  dam_static:
+  collections:
+  data:
+  layouts:
+  includes:
+collections_config:
+  pages:
+    path:
+    output: false
+    url:
+    filter:
+    parse_branch_index:
+    name:
+    description: ''
+    icon: notes
+    documentation:
+    preview:
+    sort:
+    sort_options:
+    singular_name:
+    singular_key:
+    _editables:
+      image:
+        expandable:
+        height:
+        image_size_attributes: true
+        mime_type:
+        paths:
+        resize_style: contain
+        width:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+editor:
+  default_path:
+timezone: Etc/UTC
