@@ -1,0 +1,20 @@
+# cloudcannon.config.yml
+
+# Content collections
+content:
+  collections:
+    pages:
+      path: src/pages/**/*.astro  # Path to your Astro pages
+      frontmatter:
+        title: string
+        description: string
+
+# Component mappings for live editing
+components:
+  - name: GalleryComponent
+    path: src/components/gallery/gallery.astro
+    fields:
+      images:
+        type: list
+        items:
+          type: string
