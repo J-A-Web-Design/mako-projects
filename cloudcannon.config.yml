@@ -12,7 +12,7 @@ data_config:
     - pages
 
 source:
-  src: src
+  path: src
 
 inputs:
   src:
