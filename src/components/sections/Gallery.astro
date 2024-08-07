@@ -1,5 +1,5 @@
 ---
-const images = [
+const defaultImages = [
   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp",
   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-2.webp",
   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-3.webp",
@@ -9,6 +9,8 @@ const images = [
   "https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-7.jpg",
   "https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg"
 ];
+
+const images = Astro.props.images || defaultImages;
 ---
 
 <!-- ============================================ -->
@@ -26,14 +28,14 @@ const images = [
       <!--Gallery-->
       <div class="cs-gallery" data-cloudcannon-editable>
         {images.map((image, index) => (
-          <picture class="cs-image" data-cloudcannon-field="images">
+          <picture class="cs-image" data-cloudcannon-field={`images[${index}]`} key={index}>
             <source media="(max-width: 600px)" srcset={image} />
             <source media="(min-width: 601px)" srcset={image} />
             <img
               loading="lazy"
               decoding="async"
               src={image}
-              alt="gallery"
+              alt={`Gallery image ${index + 1}`}
               width="305"
               height="400"
             />
