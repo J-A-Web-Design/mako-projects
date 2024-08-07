@@ -11,9 +11,6 @@ data_config:
   collections:
     - pages
 
-source:
-  path: src
-
 inputs:
   src:
     type: image
