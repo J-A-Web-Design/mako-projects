@@ -28,7 +28,7 @@ const images = Astro.props.images || defaultImages;
       <!--Gallery-->
       <div class="cs-gallery" data-cloudcannon-editable>
         {images.map((image, index) => (
-          <picture class="cs-image" data-cloudcannon-field={`images[${index}]`} key={index}>
+          <picture class="cs-image" data-cloudcannon-field={`images[${index}]`}>
             <source media="(max-width: 600px)" srcset={image} />
             <source media="(min-width: 601px)" srcset={image} />
             <img
