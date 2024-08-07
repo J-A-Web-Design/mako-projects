@@ -3,8 +3,13 @@ collections_config:
         path: src/data
 
 collection_groups:
+    pages:
+      path: src/pages
+      type: astro
 
 data_config:
+   collections:
+    - pages
 
 source: 
 
