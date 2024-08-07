@@ -26,7 +26,7 @@ const images = [
       <!--Gallery-->
       <div class="cs-gallery" data-cloudcannon-editable>
         {images.map((image, index) => (
-          <picture class="cs-image" key={index} data-cloudcannon-field="images">
+          <picture class="cs-image" data-cloudcannon-field="images">
             <source media="(max-width: 600px)" srcset={image} />
             <source media="(min-width: 601px)" srcset={image} />
             <img
