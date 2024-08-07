@@ -1,16 +1,4 @@
 source: src
-paths:
-  uploads: uploads
-  uploads_filename:
-  uploads_use_relative_path:
-  static:
-  dam_uploads:
-  dam_uploads_filename:
-  dam_static:
-  collections:
-  data:
-  layouts:
-  includes:
 collections_config:
   pages:
     path:
