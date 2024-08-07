@@ -1,6 +1,6 @@
 source: src
 paths:
-  uploads:
+  uploads: uploads
   uploads_filename:
   uploads_use_relative_path:
   static:
