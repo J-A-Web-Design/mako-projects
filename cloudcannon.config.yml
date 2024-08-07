@@ -12,15 +12,15 @@ data_config:
     - pages
 
 source:
+  src: src
 
-_inputs:
+inputs:
   src:
     type: image
 
 paths:
-  static: ""
+  static: ''
   uploads: uploads
 
 source_editor:
-
-timezone: Etc/UTC
+  timezone: Etc/UTC
