@@ -1,16 +1,17 @@
 ---
-const defaultImages = [
-  "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp",
-  "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-2.webp",
-  "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-3.webp",
-  "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-4.webp",
-  "https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-5.webp",
-  "https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-6.webp",
-  "https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-7.webp",
-  "https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg"
-];
+// const defaultImages = [
+//   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp",
+//   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-2.webp",
+//   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-3.webp",
+//   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-4.webp",
+//   "https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-5.webp",
+//   "https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-6.webp",
+//   "https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-7.webp",
+//   "https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg"
+// ];
 
-const images = Astro.props.images || defaultImages;
+const images = Astro.props.images;
+console.log(images);
 ---
 
 <!-- ============================================ -->
@@ -26,9 +27,9 @@ const images = Astro.props.images || defaultImages;
         </div>
       </div>
       <!--Gallery-->
-      <div class="cs-gallery" data-cloudcannon-editable>
-        {images.map((image, index) => (
-          <picture class="cs-image" data-cloudcannon-field={`images[${index}]`}>
+      <div class="cs-gallery">
+        {images?.map((image, index) => (
+          <picture class="cs-image">
             <source media="(max-width: 600px)" srcset={image} />
             <source media="(min-width: 601px)" srcset={image} />
             <img
