@@ -59,6 +59,7 @@
               <span class="cs-job">CEO, HK Traders</span>
             </li>
           </ul>
+          <a class="cs-button-solid shadow-lg" href="">Contact Us</a>
         </div>
       </section>
 </div>
@@ -154,6 +155,42 @@
       color: var(--headerColor);
       display: block;
     }
+    .cs-button-solid {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: #fff;
+      min-width: 9.375rem;
+      padding: 0 1.5rem;
+      background-color: var(--primary);
+      border-radius: 0.25rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+    }
+    .cs-button-solid:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.25rem;
+      transition: width 0.3s;
+    }
+    .cs-button-solid:hover:before {
+      width: 100%;
+    }
+
   }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
