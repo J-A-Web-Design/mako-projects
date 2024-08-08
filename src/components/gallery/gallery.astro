@@ -1,7 +1,4 @@
 ---
-import type { ImageMetadata } from "astro";
-import { Image } from "astro:assets";
-
 const defaultImages = [
   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-1.webp",
   "https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-2.webp",
@@ -14,11 +11,6 @@ const defaultImages = [
 ];
 
 const images = Astro.props.images || defaultImages;
-
-const imageAssets = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/**/*.{jpeg,jpg,png,gif}",
-  { eager: true }
-);
 ---
 
 <!-- ============================================ -->
@@ -35,30 +27,31 @@ const imageAssets = import.meta.glob<{ default: ImageMetadata }>(
       </div>
       <!--Gallery-->
       <div class="cs-gallery" data-cloudcannon-editable>
-        {images.map((image, index) => {
-          const imageSrc = imageAssets[image]?.default ?? image;
-          return (
-            <picture class="cs-image" data-cloudcannon-field={`images[${index}]`}>
-              <source media="(max-width: 600px)" srcset={imageSrc} />
-              <source media="(min-width: 601px)" srcset={imageSrc} />
-              <img
-                loading="lazy"
-                decoding="async"
-                src={imageSrc}
-                alt={`Gallery image ${index + 1}`}
-                width="305"
-                height="400"
-              />
-            </picture>
-          );
-        })}
+        {images.map((image, index) => (
+          <picture class="cs-image" data-cloudcannon-field={`images[${index}]`}>
+            <source media="(max-width: 600px)" srcset={image} />
+            <source media="(min-width: 601px)" srcset={image} />
+            <img
+              loading="lazy"
+              decoding="async"
+              src={image}
+              alt={`Gallery image ${index + 1}`}
+              width="305"
+              height="400"
+            />
+          </picture>
+        ))}
       </div>
     </div>
   </section>
 </div>
 
 <style>
-  /* Gallery Styles */
+  /*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
   @media only screen and (min-width: 0rem) {
     #gallery-1446 {
       padding: var(--sectionPadding);
@@ -70,6 +63,7 @@ const imageAssets = import.meta.glob<{ default: ImageMetadata }>(
       display: flex;
       flex-direction: column;
       align-items: center;
+      /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
       position: relative;
     }
@@ -91,12 +85,15 @@ const imageAssets = import.meta.glob<{ default: ImageMetadata }>(
       margin: 0;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(19.0625rem, 1fr));
+      /* 16px - 20px */
       gap: clamp(1rem, 1.5vw, 1.25rem);
       position: relative;
     }
     #gallery-1446 .cs-image {
+      /* 260px - 360px */
       min-height: clamp(16.25rem, 60vw, 20rem);
       border-radius: 1rem;
+      /* clips the image corners */
       overflow: hidden;
       display: block;
       position: relative;
@@ -107,6 +104,7 @@ const imageAssets = import.meta.glob<{ default: ImageMetadata }>(
       left: 0;
       height: 100%;
       width: 100%;
+      /* makes it act like a background image */
       object-fit: cover;
     }
   }
