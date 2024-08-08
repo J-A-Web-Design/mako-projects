@@ -1,20 +1,28 @@
-# cloudcannon.config.yml
 
-# Content collections
-content:
-  collections:
-    pages:
-      path: src/pages/**/*.astro  # Path to your Astro pages
-      frontmatter:
-        title: string
-        description: string
+paths:
+  data: data
+  static: "public"
+  uploads: public/images
 
-# Component mappings for live editing
-components:
-  - name: GalleryComponent
-    path: src/components/gallery/gallery.astro
-    fields:
-      images:
-        type: list
-        items:
-          type: string
+collections_config:
+  pages:
+    path: src/content/pages
+    url: "/[full_slug]/"
+    output: true
+    icon: laptop_mac
+    _enabled_editors:
+      - visual
+    filter:
+      base: strict
+
+collection_groups:
+  - heading: Pages
+    collections:
+      - pages
+
+# Input config
+_inputs:
+  gallery_images:
+    type: array
+  gallery_images[*]:
+    type: image
