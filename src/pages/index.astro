@@ -1,5 +1,6 @@
 ---
 import About from '../components/sections/About.astro';
+import { AstroSeo } from '@astrolib/seo'
 import ContactInfo from '../components/sections/ContactInfo.astro';
 import GalleryComponent from '../components/gallery/gallery.astro';
 import Hero from '../components/sections/Hero.astro';
@@ -10,6 +11,10 @@ import Testimonials from '../components/sections/Testimonials.astro';
 const props = { /* ... */ };
 ---
 
+<AstroSeo
+  title="Mako Construction and Renovations"
+  description="Experienced and Red Seal certified, Mako Construction and Renovations delivers high-quality residential and commercial projects with professionalism and efficiency"
+/>
 <Layout title="Mako Construction and Renovations">
 	<main>
 		<Hero />
