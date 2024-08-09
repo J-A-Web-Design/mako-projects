@@ -9,7 +9,7 @@ import Services from "../components/sections/Services.astro";
 import Testimonials from "../components/sections/Testimonials.astro";
 
 import { getEntry } from "astro:content";
-// import { processFrontmatter } from "@bookshop/astro-bookshop/helpers/frontmatter-helper.js";
+import { processFrontmatter } from "@bookshop/astro-bookshop/helpers/frontmatter-helper.js";
 
 const page = await getEntry("pages", "index");
 processFrontmatter(page.data);
@@ -26,12 +26,12 @@ const aboutUsImages = page.data.about_us_images;
     <Hero />
     <!-- <AboutComponent bookshop:live {...page.data.about_us} /> -->
     <AboutComponent
-	title="About Us"
-	topper="Why Choose Us" 
-	text="With over 25 years of experience and Red Seal certification, we possess the expertise to complete projects properly and efficiently. Our extensive experience means we understand the intricacies of both residential and commercial projects, ensuring that each one is executed with the highest standards of quality and professionalism."
-	button_text="Contact Us" 
-	button_link="/contact"
-	images={aboutUsImages}
+      title="About Us"
+      topper="Why Choose Us"
+      text="With over 25 years of experience and Red Seal certification, we possess the expertise to complete projects properly and efficiently. Our extensive experience means we understand the intricacies of both residential and commercial projects, ensuring that each one is executed with the highest standards of quality and professionalism."
+      button_text="Contact Us"
+      button_link="/contact"
+      images={aboutUsImages}
     />
     <Services />
     <GalleryComponent bookshop:live images={page.data.gallery_images} />

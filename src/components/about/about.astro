@@ -20,7 +20,7 @@ const {topper, title, text, button_text, button_link, images = []} = Astro.props
         <div class="cs-container">
             <!-- Left Section -->
             <div class="cs-image-group">
-                {images.map((image, index) => (
+                {images?.map((image, index) => (
                     <picture class='cs-picture'>
                         <source
                             media="(max-width: 600px)"
