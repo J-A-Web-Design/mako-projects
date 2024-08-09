@@ -9,6 +9,7 @@ gallery_images:
   - https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-6.jpg
   - https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-7.jpg
   - https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg
+  - https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg
 about_us_images:
   - src: >-
       https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg?updatedAt=1722985326254
