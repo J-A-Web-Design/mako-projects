@@ -5,12 +5,12 @@ export interface Props{
     text: string;
     button_text: string;
     button_link: string;
-    images?:{
+    images:{
         src: string;
         alt: string;
     }[];
     }
-    const {topper, title, text, button_text, button_link, images = []} = Astro.props as Props;
+const {topper, title, text, button_text, button_link, images = []} = Astro.props as Props;
 ---
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
