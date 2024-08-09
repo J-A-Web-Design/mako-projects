@@ -9,7 +9,7 @@ import Services from "../components/sections/Services.astro";
 import Testimonials from "../components/sections/Testimonials.astro";
 
 import { getEntry } from "astro:content";
-import { processFrontmatter } from "@bookshop/astro-bookshop/helpers/frontmatter-helper.js";
+// import { processFrontmatter } from "@bookshop/astro-bookshop/helpers/frontmatter-helper.js";
 
 const page = await getEntry("pages", "index");
 processFrontmatter(page.data);
