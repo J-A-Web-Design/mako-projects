@@ -21,7 +21,7 @@ const {topper, title, text, button_text, button_link, images = []} = Astro.props
             <!-- Left Section -->
             <div class="cs-image-group">
                 {images?.map((image, index) => (
-                    <picture class='cs-picture'>
+                    <picture class={`cs-picture cs-picture${index + 1}`}>
                         <source
                             media="(max-width: 600px)"
                             srcset={image.src}
@@ -202,5 +202,22 @@ const {topper, title, text, button_text, button_link, images = []} = Astro.props
         z-index: -1;
       }
     }
+
+    #sbs-683 .cs-picture1 {
+    top: 5em;
+    left: 0;
+}
+#sbs-683 .cs-picture2 {
+    top: 0;
+    right: 0;
+}
+#sbs-683 .cs-picture3 {
+    bottom: 0;
+    left: 0;
+}
+#sbs-683 .cs-picture4 {
+    bottom: 5em;
+    right: 0;
+}
   </style>
   
