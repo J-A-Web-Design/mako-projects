@@ -17,5 +17,7 @@ about_us_images:
     alt: "people inside"
   - src: "https://ik.imagekit.io/azupnt3mqx/mako-image-interior-3.webp?updatedAt=1722905946522"
     alt: "interior design"
+  - src: "https://ik.imagekit.io/azupnt3mqx/mako-image-interior-3.webp?   updatedAt=1722905946522"
+    alt: "interior design"
 
 ---
