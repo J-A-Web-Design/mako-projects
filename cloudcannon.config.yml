@@ -1,4 +1,3 @@
-
 paths:
   data: data
   static: "public"
@@ -24,16 +23,5 @@ collection_groups:
 _inputs:
   gallery_images:
     type: array
-    item:
-      type: image
-  text:
-    type: text
-  about_us_images:
-    type: array
-    item:
-      type: object
-      fields:
-        src:
-          type: image
-        alt:
-          type: text
+  gallery_images[*]:
+    type: image
