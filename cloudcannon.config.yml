@@ -35,3 +35,17 @@ _inputs:
         path: "public/images"
       - type: text
         name: alt
+        
+  about_us_images:
+    type: array
+    label: About Us Images
+    add_label: "Add Image"
+    fields:
+      - type: image
+        name: src
+        label: Image File
+        upload: true
+        path: "public/images"
+      - type: text
+        name: alt
+        label: Alt Text
