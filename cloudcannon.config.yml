@@ -26,3 +26,5 @@ _inputs:
     type: array
   gallery_images[*]:
     type: image
+  text:
+    type: text
