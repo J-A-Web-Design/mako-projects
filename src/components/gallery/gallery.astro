@@ -85,7 +85,7 @@ console.log(images);
       padding: 0;
       margin: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
       /* 16px - 20px */
       gap: clamp(1rem, 1.5vw, 1.25rem);
       position: relative;
@@ -108,5 +108,12 @@ console.log(images);
       /* makes it act like a background image */
       object-fit: cover;
     }
+  }
+
+  @media screen and (min-width: 600px) {
+    #gallery-1446 .cs-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+    
   }
 </style>
