@@ -8,7 +8,7 @@
     --bodyTextColor: #e2dddd;
     --bodyTextColorWhite: #fafbfc;
     --ctaButton: #0b9a9a;
-
+   --ctaButtonText: #f9f0f0;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
