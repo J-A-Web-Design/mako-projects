@@ -1,11 +1,15 @@
-<!-- ============================================ --><!--                  Testimonials                   --><!-- ============================================ -->
+---
+import Testimonial from './testimonials.json';
+const {name, position, review } = Astro.props;
+---
 <div class="bg-darker" id="testimonials">
   <section id="reviews-355">
     <div class="cs-container">
       <div class="cs-content">
         <span class="cs-topper">Testimonials</span>
-        <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
-        <p class="cs-text">[Description here]</p>
+        <h2 class="cs-title">
+          What Our Clients Are Saying
+        </h2>
       </div>
       <ul class="cs-card-group">
         <li class="cs-item shadow-lg border-black border-2">
@@ -19,12 +23,10 @@
             height="33"
           />
           <p class="cs-review">
-            Mako Construction and Renovations exceeded our expectations! Matthew
-            and his team delivered outstanding quality and professionalism.
-            Highly recommend!
+           {Testimonial[0].review}
           </p>
-          <span class="cs-name">John Doe</span>
-          <span class="cs-job">Chief Executive</span>
+          <span class="cs-name">{Testimonial[0].name}</span>
+          <span class="cs-job">{Testimonial[0].position}</span>
         </li>
         <li class="cs-item shadow-lg border-black border-2">
           <img
@@ -37,12 +39,10 @@
             height="33"
           />
           <p class="cs-review">
-            Mako Construction and Renovations exceeded our expectations! Matthew
-            and his team delivered outstanding quality and professionalism.
-            Highly recommend!
+            {Testimonial[1].review}
           </p>
-          <span class="cs-name">Robert Henrich</span>
-          <span class="cs-job">CEO, HK Traders</span>
+          <span class="cs-name">{Testimonial[1].name}</span>
+          <span class="cs-job">{Testimonial[1].position}</span>
         </li>
         <li class="cs-item shadow-lg border-black border-2">
           <img
