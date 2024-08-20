@@ -9,5 +9,7 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: 'https://makoprojects.ca',
 
-  integrations: [tailwind(), sitemap(), bookshop(), robotsTxt()]
+  integrations: [tailwind(), sitemap(), bookshop(), robotsTxt({
+    sitemap: false,
+  })]
 });
