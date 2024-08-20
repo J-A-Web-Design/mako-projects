@@ -10,8 +10,8 @@ gallery_images:
     https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-6.webp
   - >-
     https://ik.imagekit.io/azupnt3mqx/mako-construction-and-renovations-gallery-7.webp
+  - /images/mako-projects-renovation-04.webp
   - /images/mako-construction-and-renovations-hero.webp
-  - /images/mako-projects-renovation-03.webp
   - /images/mako-projects-renovation-01.webp
 about_us_images:
   - src: https://ik.imagekit.io/azupnt3mqx/mako-projects-renovation-04.webp
