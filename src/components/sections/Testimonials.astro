@@ -55,12 +55,10 @@ const {name, position, review } = Astro.props;
             height="33"
           />
           <p class="cs-review">
-            Mako Construction and Renovations exceeded our expectations! Matthew
-            and his team delivered outstanding quality and professionalism.
-            Highly recommend!
+            {Testimonial[2].review}
           </p>
-          <span class="cs-name">Robert Henrich</span>
-          <span class="cs-job">CEO, HK Traders</span>
+          <span class="cs-name">{Testimonial[2].name}</span>
+          <span class="cs-job">{Testimonial[2].position}</span>
         </li>
       </ul>
       <a class="cs-button-solid shadow-lg" href="mailto:info@makoprojects.ca"
