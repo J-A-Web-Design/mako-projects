@@ -14,7 +14,8 @@ gallery_images:
   - /images/mako-construction-and-renovations-hero.webp
   - /images/mako-projects-renovation-01.webp
 about_us_images:
-  - src: https://ik.imagekit.io/azupnt3mqx/mako-projects-renovation-04.webp
+  - src: >-
+      https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg?updatedAt=1722985326254
     alt: Mako Construction & Renovations - Renovation Project 1
   - src: https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg
     alt: Mako Construction & Renovations - Renovation Project 2
