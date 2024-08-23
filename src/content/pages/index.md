@@ -15,13 +15,14 @@ gallery_images:
   - /images/mako-projects-renovation-01.webp
 about_us_images:
   - src: >-
-      https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-8.jpg?updatedAt=1722985326254
+      https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-about-3.webp
     alt: Mako Construction & Renovations - Renovation Project 1
-  - src: >-
-      https://ik.imagekit.io/azupnt3mqx/mako-projects-renovation-01.webp?updatedAt=1723826817899
+  - src: https://ik.imagekit.io/azupnt3mqx/mako-projects-renovation-01.webp
     alt: Mako Construction & Renovations - Renovation Project 2
-  - src: https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-7.jpg
-    alt: Mako Construction & Renovations - Renovation Project 4
-  - src: https://ik.imagekit.io/azupnt3mqx/mako-constuction-renovation-6.jpg
+  - src: >-
+      https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-about-1.webp
     alt: Mako Construction & Renovations - Renovation Project 3
+  - src: >-
+      https://ik.imagekit.io/azupnt3mqx/mako-construction-renovation-about-4.webp
+    alt: Mako Construction & Renovations - Renovation Project 4
 ---
