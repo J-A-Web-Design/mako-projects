@@ -29,21 +29,22 @@ const { title, description } = Astro.props;
     <!-- Primary Meta Tags -->
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="keywords" content="">
+    <meta name="keywords" content="" />
 
     <title>{title}</title>
 
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4TK2PBJX5D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TK2PBJX5D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-4TK2PBJX5D');
-</script>
-
+      gtag("config", "G-4TK2PBJX5D");
+    </script>
   </head>
   <body>
     <Header />
